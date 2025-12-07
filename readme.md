@@ -1,1 +1,0 @@
-# Trabalho OpenMP - Tarefas C e D
