@@ -314,6 +314,14 @@ Kernel SAXPY: `y[i] = a*x[i] + y[i]`
 
 ### Resultados
 
+#### Gráficos Gerados
+
+![Comparação de Tempos - SAXPY](tarefa_c_tempo.png)
+*Figura C1: Tempos de execução das diferentes variantes SAXPY para N=100k, 500k e 1M.*
+
+![Speedup - SAXPY](tarefa_c_speedup.png)
+*Figura C2: Speedup relativo ao baseline sequencial para as variantes SIMD e Parallel+SIMD.*
+
 #### Tabela de Tempos (segundos)
 
 **N = 100.000**
@@ -424,6 +432,14 @@ Comparação de overhead entre duas organizações de regiões paralelas executa
 - Laço 2: `d[i] = c[i] * 2.0 + a[i]`
 
 ### Resultados
+
+#### Gráficos Gerados
+
+![Comparação de Tempos - Ingênua vs Otimizada](tarefa_d_tempo.png)
+*Figura 3: Comparação de tempos de execução entre as versões ingênua e otimizada para diferentes valores de N e threads.*
+
+![Overhead Relativo - Otimizada vs Ingênua](tarefa_d_overhead.png)
+*Figura 4: Overhead relativo da versão otimizada em relação à ingênua (valores negativos indicam que a otimizada é mais rápida).*
 
 #### Tabela de Tempos (segundos)
 
